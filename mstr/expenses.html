@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Master</title>
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bgmainNav bg-gradient" id="sidebar-wrapper">
+        <div
+          class="
+            sidebar-heading
+            text-center
+            py-4
+            primary-text
+            fs-4
+            fw-bold
+            border-bottom
+          "
+        >
+          Master
+        </div>
+        <div class="list-group list-group-flush my-3">
+          <a
+            href="./master.html"
+            class="
+              list-group-item list-group-item-action
+              bg-transparent
+              second-text
+              fw-bold
+            "
+            >Customer Regstration</a
+          >
+          <a
+            href="./listonlinework.html"
+            class="
+              list-group-item list-group-item-action
+              bg-transparent
+              second-text
+              fw-bold
+            "
+            >List of Online work</a
+          >
+          <a
+            href="./expenses.html"
+            class="
+              list-group-item list-group-item-action
+              bg-transparent
+              second-text
+              fw-bold
+            "
+            >Expense</a
+          >
+          <a
+            href="./employee.html"
+            class="
+              list-group-item list-group-item-action
+              bg-transparent
+              second-text
+              fw-bold
+            "
+            >Employee</a
+          >
+          <a
+            href="#"
+            class="
+              list-group-item list-group-item-action
+              bg-transparent
+              second-text
+              fw-bold
+            "
+            >Outside services</a
+          >
+          <a
+            href="#"
+            class="
+              list-group-item list-group-item-action
+              bg-transparent
+              second-text
+              fw-bold
+            "
+            >Client services</a
+          >
+          <a
+            href="#"
+            class="
+              list-group-item list-group-item-action
+              bg-transparent
+              fw-bold
+            "
+            ><i class="fas fa-power-off me-2"></i>Logout</a
+          >
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav class="bgnav navbar navbar-expand-lg navbar-light py-4 px-4">
+          <div class="container-fluid">
+            <a class="navbar-brand" id="menu-toggle" href="#"
+              ><i class="fas fa-align-left primary-text fs-4 me-3"></i
+            ></a>
+
+            <div id="navbarText">
+              <ul
+                class="
+                  custom-ul
+                  navbar-nav
+                  text-center
+                  fw-bold
+                  me-auto
+                  mb-2 mb-lg-0
+                "
+              >
+                <li class="nav-item mb-1">
+                  <a
+                    class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
+                    aria-current="page"
+                    href="../mstr/master.html"
+                    ><i class="fas fa-brain me-2"></i>Master</a
+                  >
+                </li>
+                <li class="nav-item mb-1">
+                  <a
+                    class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
+                    href="../process/payment.html"
+                    ><i class="fas fa-procedures me-2"></i>Process</a
+                  >
+                </li>
+                <li class="nav-item mb-1">
+                  <a
+                    class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
+                    href="../report/dayreport.html"
+                    ><i class="fas fa-file-medical me-2"></i>Report</a
+                  >
+                </li>
+                <li class="nav-item mb-1">
+                  <a
+                    class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
+                    href="#"
+                    ><i class="fas fa-tools me-2"></i>Settings</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container-fluid px-4">
+          <div
+            class="
+              row
+              g-3
+              my-2
+              d-flex
+              justify-content-around
+              align-items-center
+            "
+          >
+            <h4>Expense</h4>
+            <form class="bgform row g-3 p-2 rounded">
+              <div class="col-md-3">
+                <label for="testId" class="form-label">Expense Id</label>
+                <input type="text" class="form-control" id="testId" />
+              </div>
+              <div class="col-md-3">
+                <label for="Date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="Date" />
+              </div>
+              <div class="col-md-3">
+                <label for="testId" class="form-label">Expense Head</label>
+                <input type="text" class="form-control" id="testId" />
+              </div>
+
+              <div class="col-md-2">
+                <label for="nameOfTest" class="form-label">New Expense Head</label>
+                <button class="btn btn-primary form-control">New</button>
+              </div>
+              <div class="col-md-3">
+                <label for="nameOfTest" class="form-label">Expense Name</label>
+                <input type="text" class="form-control" id="nameOfTest" />
+              </div>
+            
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+          
+            </form>
+          </div>
+        </div>
+
+        <div class="row my-5 d-flex justify-content-around align-items-center">
+          <div class="col">
+            <table class="table bgtable rounded shadow-sm table-hover">
+              <thead>
+                <tr>
+                  <th scope="col" width="50">#</th>
+                  <th scope="col">Product</th>
+                  <th scope="col">Customer</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Television</td>
+                  <td>Jonny</td>
+                  <td>$1200</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Laptop</td>
+                  <td>Kenny</td>
+                  <td>$750</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Cell Phone</td>
+                  <td>Jenny</td>
+                  <td>$600</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Fridge</td>
+                  <td>Killy</td>
+                  <td>$300</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Books</td>
+                  <td>Filly</td>
+                  <td>$120</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Gold</td>
+                  <td>Bumbo</td>
+                  <td>$1800</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Pen</td>
+                  <td>Bilbo</td>
+                  <td>$75</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Notebook</td>
+                  <td>Frodo</td>
+                  <td>$36</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Dress</td>
+                  <td>Kimo</td>
+                  <td>$255</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Paint</td>
+                  <td>Zico</td>
+                  <td>$434</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>Carpet</td>
+                  <td>Jeco</td>
+                  <td>$1236</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>Food</td>
+                  <td>Haso</td>
+                  <td>$422</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <div class="tab-container fw-bold">
+      <a aria-current="page" href="../mstr/master.html"
+        ><div class="tab master">
+          <i class="fas fa-brain text-primary"></i><br />
+          Master
+        </div>
+      </a>
+      <div class="tab process">
+        <i class="fas fa-procedures text-danger"></i><br />
+        <a href="../process/payment.html">Process</a>
+      </div>
+      <div class="tab report">
+        <i class="fas fa-file-medical text-warning"></i><br />
+        <a href="../report/dayreport.html">Report</a>
+      </div>
+      <div class="tab settings">
+        <i class="fas fa-tools text-success"></i><br />
+        <a href="#">Settings</a>
+      </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

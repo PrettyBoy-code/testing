@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link href="./css/fontawesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/regular.min.css" />
+    <script defer src="./js/all.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row px-3">
+        <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+          <div class="img-left d-none d-md-flex"></div>
+
+          <div class="card-body">
+            <h4 class="title text-center mt-5">Login</h4>
+            <form class="form-box px-3" id="form" method="get">
+              <div class="form-input">
+                <span><i class="fas fa-user"></i> </span>
+                <input
+                  id="username"
+                  type="text"
+                  name=""
+                  placeholder="Username"
+                  tabindex="10"
+                 
+                />
+              </div>
+              <div class="form-input">
+                <span><i class="fa fa-key"></i></span>
+                <input
+                  id="password"
+                  type="password"
+                  name=""
+                  placeholder="Password"
+                  
+                />
+              </div>
+
+              <div class="mb-3">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="cb1"
+                    name=""
+                  />
+                  <label class="custom-control-label" for="cb1"
+                    >Remember me</label
+                  >
+                </div>
+              </div>
+
+              <div class="row my-3">
+                <div class="col-md-4 cap_background d-flex my-3">
+                  <p id="displayCap" class="mx-aut Dis_Cap text-warning"></p>
+                </div>
+                <div
+                  class="col-md-2 d-flex my-3 fs-1 refersh_Btn"
+                  onclick="generate()"
+                >
+                  <i class="mx-auto my-auto fas fa-redo-alt"></i>
+                </div>
+                <div class="col-md-4 cap my-3">
+                  <input
+                    id="entered-Cap"
+                    type="text"
+                    name=""
+                    placeholder="Enter Captcha"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3 text-center">
+                <a
+                  href="./master.html"
+                  class="btn btn-primary text-uppercase rounded-pill mx-auto"
+                >
+                  Login
+                </a>
+              </div>
+
+              <div class="text-right">
+                <a href="#" class="forget-link"> Forget Password? </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/cap.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
