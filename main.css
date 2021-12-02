@@ -1,0 +1,147 @@
+:root {
+  --main-bg-color: #009d63;
+  --main-text-color: #6852cb;
+  --second-text-color: #eee;
+  --second-bg-color: #6852cb;
+}
+/* nav and side bg*/
+.bgmainNav{
+  background-color: #31572c;
+}
+.bgnav{
+  background-color: #ece0f5;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+.sidebar-heading{
+  color: #eee;
+}
+.second-text {
+  color: var(--second-text-color);
+}
+.list-group-item:hover{
+  background-color: #ffbe0b !important;
+  color: #212529;
+}
+
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  
+}
+
+#sidebar-wrapper {
+  
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+.bgform{
+  background-color: #e9ecef;
+}
+
+.bgtable{
+  background-color: #e9ecef;
+  width: 98%;
+  margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+  
+}
+.tab-container{
+  display: none;
+}
+@media only screen and (max-width:768px) {
+  .custom-ul{
+    display: none;
+  }
+  .tab-container{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    }
+  .tab-container a {
+    text-decoration: none;
+    color: #212529;
+  }
+  .tab{
+    background-color:  #fff;
+    padding: .5rem;
+    margin: 0 3px;
+  }
+  .tab:hover{
+    background-color: rgba(91,55,183,0.2);
+    color: rgba(91,55,183,1);
+    border-radius: .3rem;
+    
+  }
+}
